@@ -48,13 +48,14 @@ li {
   --main-color: #0062ff;
   --supporting-color: #ebf3fe;
   --font-color: #424242;
-  --bg-color: #ffffff;
+  --bg-color: #f7fcff;
   --heading-color: #000a19;
   --para-color: #504e4d;
   --hero-color: #003b99;
   --white-color: #fff;
   --btn-hover-bg-color: #003b99;
   --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --footer-bg-color: #040d12;
 }
 
 /*======================
@@ -122,6 +123,13 @@ li {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   color: var(--hero-color);
+}
+.section-why--choose .container:first-child,
+.section-blog .container:first-child,
+.section-course .container:first-child,
+.section-contact--homepage .container:first-child,
+.section-about .container:first-child {
+  padding: 6.4rem 0 2.4rem 0;
 }
 
 /*======================
@@ -282,9 +290,7 @@ main {
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
 }
-.section-about .container1 {
-  padding: 6.4rem 2.4rem 5rem;
-}
+
 .section-about img:hover {
   transform: rotate(360deg);
   scale: 1.2;
@@ -296,7 +302,9 @@ main {
 }
 
 /*======= course section =======*/
-
+.section-course {
+  background-color: var(--bg-color);
+}
 .section-course .grid {
   gap: 3.2rem;
 }
@@ -342,9 +350,7 @@ main {
 /*======= course section end =======*/
 
 /*======= Why choose section =======*/
-.section-why--choose .container1 {
-  padding: 6.4rem 2.4rem 2.4rem;
-}
+
 .text-align--right .why-choose--div {
   display: flex;
   flex-direction: column;
@@ -439,3 +445,103 @@ figure {
   background-color: transparent;
 }
 /*======= Why choose section end =======*/
+
+/*======= contact home section =======*/
+.section-contact--homepage {
+  width: 60%;
+  min-height: 30rem;
+  margin: 0 auto;
+  box-shadow: var(--btn-box-shadow);
+  margin-bottom: 5rem;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  padding: 0 3.2rem;
+  position: relative;
+  bottom: -15rem;
+  background-color: var(--white-color);
+}
+.section-contact--homepage .grid {
+  align-items: center;
+  gap: 6.4rem;
+}
+.contact-title {
+  font-size: 3.8rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+.section-contact--homepage .btn a {
+  color: var(--white-color);
+}
+.contact-content p {
+  margin: 1.2rem 0 2.4rem 0;
+}
+.section-contact--homepage img {
+  width: 90%;
+  height: auto;
+}
+.section-contact--homepage .fa-solid {
+  padding: 0;
+  background-color: var(--white-color);
+  color: var(--main-color);
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+/*======= contact home section end =======*/
+
+/*======= footer section =======*/
+footer {
+  background-color: var(--footer-bg-color);
+  padding-top: 15rem;
+}
+footer * {
+  color: var(--white-color);
+}
+footer .grid{
+text-align: right;
+}
+.footer-1--div{
+  text-align: left;
+}
+.footer-subheading {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.footer-1--div p {
+  margin: 1rem 0 3.2rem 0;
+}
+.footer-1--div .social-footer--icons {
+  display: flex;
+  gap: 2.4rem;
+}
+.footer-1--div .fa-brands {
+  width: 5rem;
+  aspect-ratio: 1;
+  background-color: var(--supporting-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: var(--btn-hover-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.footer-1--div .fa-brands:hover {
+  rotate: 360deg;
+  background-color: var(--btn-hover-bg-color);
+  color: var(--supporting-color);
+}
+footer ul li a:hover {
+  color: var(--hero-color);
+}
+/*======= footer section end =======*/
