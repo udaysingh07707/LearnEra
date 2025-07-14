@@ -26,7 +26,8 @@ h6 {
 
 p,
 li,
-a {
+a,
+label {
   font-family: "Urbanist", sans-serif;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
@@ -128,7 +129,8 @@ li {
 .section-blog .container:first-child,
 .section-course .container:first-child,
 .section-contact--homepage .container:first-child,
-.section-about .container:first-child {
+.section-about .container:first-child,
+.section-contact .container:first-child {
   padding: 6.4rem 0 2.4rem 0;
 }
 
@@ -446,6 +448,97 @@ figure {
 }
 /*======= Why choose section end =======*/
 
+/*======= blog section =======*/
+.section-blog {
+  background-color: var(--bg-color);
+}
+.section-blog .grid {
+  gap: 6.4rem;
+}
+.section-blog .blog {
+  transition: scale 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.section-blog .blog:hover {
+  scale: 1.1;
+}
+.section-blog img {
+  width: 100%;
+  height: auto;
+}
+.section-blog .section-common--title h3 {
+  font-weight: 600;
+}
+.section-blog .blog-date {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+  font-size: 1.4rem;
+}
+.section-blog .blog-date .fa-solid {
+  background-color: transparent;
+  padding: 0;
+}
+
+.section-blog .section-common--title {
+  margin-top: 1.8rem;
+}
+.section-blog .blog {
+  box-shadow: var(--btn-box-shadow);
+}
+.section-blog .blog-content {
+  padding: 1.4rem 2.4rem 2.4rem;
+}
+/*======= blog section end =======*/
+
+/*======= actual content page =======*/
+.mb-3 {
+  margin-bottom: 3.2rem;
+}
+label {
+  display: block;
+  text-transform: capitalize;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 1.4rem 2.4rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+}
+.contact-content .grid {
+  gap: 6.4rem;
+}
+::placeholder {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+.btn-submit {
+  font-size: 1.8rem;
+  border: none;
+  text-transform: capitalize;
+}
+.section-contact .grid {
+  gap: 6.4rem;
+}
+input:focus-visible {
+  outline: 0.2rem solid var(--main-color);
+}
+textarea:focus-visible {
+  outline: 0.2rem solid var(--main-color);
+}
+
+/*======= actual content page end =======*/
+
 /*======= contact home section =======*/
 .section-contact--homepage {
   width: 60%;
@@ -500,10 +593,10 @@ footer {
 footer * {
   color: var(--white-color);
 }
-footer .grid{
-text-align: right;
+footer .grid {
+  text-align: right;
 }
-.footer-1--div{
+.footer-1--div {
   text-align: left;
 }
 .footer-subheading {
@@ -545,3 +638,25 @@ footer ul li a:hover {
   color: var(--hero-color);
 }
 /*======= footer section end =======*/
+
+/*======= scroll bar section =======*/
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--supporting-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--heading-color);
+}
+/*======= scroll bar section end =======*/
