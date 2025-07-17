@@ -27,22 +27,6 @@
 
 ---
 
-## 📁 Project Structure
-
-LearnEra/
-├── index.html
-├── about.html
-├── contact.html
-├── services.html
-├── css/
-│ └── style.css
-├── media/
-│ └── (all .png images here)
-
-
-
----
-
 ## 🔧 Built With
 
 - HTML5
@@ -66,7 +50,7 @@ This is the first step in my journey toward becoming a full-stack web developer 
 ## ✍️ Author
 
 - 👤 Uday Singh
-- 🌐 [LinkedIn](https://www.linkedin.com/in/your-link)
+- 🌐 [LinkedIn](https://www.linkedin.com/in/uday-singh-01b15a321/)
 - 📧 udaysingh8790@gmail.com 
 
 ---
