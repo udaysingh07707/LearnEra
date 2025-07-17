@@ -131,7 +131,7 @@ li {
 .section-contact--homepage .container:first-child,
 .section-about .container:first-child,
 .section-contact .container:first-child {
-  padding: 6.4rem 0 2.4rem 0;
+  padding: 6.4rem 2.4rem 2.4rem 2.4rem;
 }
 
 /*======================
@@ -144,7 +144,28 @@ li {
 }
 
 /*======= navbar sectiion =======*/
-
+.logo-box {
+  border: 0.4rem solid black;
+  padding: 0.3rem 0.5rem;
+}
+.text-highlight,
+.text {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.text-highlight {
+  color: var(--white-color);
+  padding: 0 0.8rem;
+}
+.text {
+  color: rgb(61, 187, 255);
+  padding: 0 0.1rem;
+  font-weight: 800;
+}
+.text-highlight {
+  background-color: rgb(61, 187, 255);
+}
 .section-navbar {
   width: 100%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -153,8 +174,8 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
-  height: 9.18rem;
+  padding: 1.8rem 2.4rem;
+  height: auto;
 }
 
 .section-navbar .navbar ul {
@@ -220,7 +241,7 @@ main {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 112px;
+  height: 12rem;
 }
 
 .custom-shape-divider-bottom-1752162874 .shape-fill {
@@ -531,10 +552,10 @@ textarea {
   gap: 6.4rem;
 }
 input:focus-visible {
-  outline: 0.2rem solid var(--main-color);
+  outline: 0.2rem solid var(--heading-color);
 }
 textarea:focus-visible {
-  outline: 0.2rem solid var(--main-color);
+  outline: 0.2rem solid var(--heading-color);
 }
 
 /*======= actual content page end =======*/
@@ -660,3 +681,132 @@ footer ul li a:hover {
   background: var(--heading-color);
 }
 /*======= scroll bar section end =======*/
+
+/*======= media queries =======*/
+@media (width <= 1400px) {
+  html {
+    font-size: 56.25%;
+  }
+  .section-hero img {
+    width: 90%;
+  }
+}
+
+@media (width <= 1220px) {
+  html {
+    font-size: 54%;
+  }
+  :is(
+      .section-about,
+      .section-blog,
+      .section-course,
+      .section-contact--homepage,
+      .section-why--choose
+    )
+    .grid {
+    gap: 6.4rem;
+  }
+}
+@media (width <= 1100px) {
+  :is(.section-course,.section-blog) .grid-four--cols {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .section-why--choose {
+    .choose-center--div {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      figure::before {
+        width: 0;
+        height: 0;
+        padding: 0;
+        background-color: transparent;
+      }
+      figure::after {
+        width: 0;
+        height: 0;
+        padding: 0;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@media (width <= 998px) {
+  .section-hero {
+    padding-bottom: 5rem;
+    height: auto;
+    .grid-two--cols {
+      grid-template-columns: 1fr;
+      .section-hero--content {
+        order: 2;
+      }
+      .section-hero--image {
+        order: 1;
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .section-about .about-div {
+    text-align: start;
+  }
+  footer .grid-four--cols {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    text-align: left;
+    .footer-1--div {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      align-self: end;
+      margin-top: 6.4rem;
+    }
+  }
+}
+
+@media (width <= 768px) {
+  .grid-two--cols,
+  .grid-three--cols {
+    grid-template-columns: 1fr;
+  }
+  .section-navbar .container {
+    display: flex;
+    flex-direction: column;
+    .navbar ul {
+      gap: 2.4rem;
+    }
+    .logo-box {
+      margin-bottom: 2.4rem;
+    }
+  }
+  .section-why--choose {
+    .grid{
+      gap: 0;
+    }
+    img {
+      width: 44%;
+    }
+    .why-choose--div {
+      align-items: start;
+      text-align: left;
+    }
+  }
+  .section-hero .grid .hero-heading{
+    font-size: 3.8rem;
+  }
+   .section-contact--homepage .btn {
+    display: block;
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: 2.4rem;
+  }
+  :is(.section-contact--homepage) .container:first-child {
+    padding: 6.4rem 0rem 2.4rem 0rem;
+  }
+  .section-contact .contact-content .grid{
+    gap: 3.2rem;
+  }
+}
+
+/*======= media queries end=======*/
