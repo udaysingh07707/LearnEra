@@ -8,8 +8,11 @@
       name="description"
       content="Welcome to LearnEra, your gateway to knowledge and skill development. We are dedicated to providing high-quality, accessible education for learners of all ages and backgrounds"
     />
-    <meta name="keywords" content="LearnEra, online learning, HTML5 CSS3 project, educational website, responsive design, web development, study platform">
-     <meta name="robots" content="index, follow">
+    <meta
+      name="keywords"
+      content="LearnEra, online learning, HTML5 CSS3 project, educational website, responsive design, web development, study platform"
+    />
+    <meta name="robots" content="index, follow" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -18,10 +21,14 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <!--====== nav section start ======-->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+      <!--====== nav section start ======-->
     <header class="section-navbar">
       <div class="container">
         <div class="logo-box">
@@ -69,11 +76,12 @@
               <a href="service.html" class="btn btn-white">Learn with us</a>
             </div>
           </div>
-          <div class="section-hero--image">
+          <div class="section-hero--image" data-aos="fade-up">
             <figure>
               <img
                 src="media/main-hero.png"
                 alt="a 3d character doing work like coding"
+              />
               />
             </figure>
           </div>
@@ -118,7 +126,7 @@
       </div>
 
       <div class="container grid grid-three--cols">
-        <div class="about-div">
+        <div class="about-div" data-aos="fade-up">
           <div class="icon">
             <img src="media/research.png" alt="learnEra research team" />
           </div>
@@ -129,7 +137,7 @@
             learn.
           </p>
         </div>
-        <div class="about-div">
+        <div class="about-div" data-aos="fade-up" data-aos-delay="300">
           <div class="icon">
             <img src="media/design.png" alt="learnEra design team" />
           </div>
@@ -139,7 +147,7 @@
             We make sure they work for different ways people like to learn.
           </p>
         </div>
-        <div class="about-div">
+        <div class="about-div" data-aos="fade-up" data-aos-delay="600">
           <div class="icon">
             <img src="media/Coding.png" alt="learnEra coding team" />
           </div>
@@ -236,7 +244,7 @@
       </div>
       <div class="container grid grid-three--cols">
         <div class="choose-left--div text-align--right">
-          <div class="why-choose--div">
+          <div class="why-choose--div" data-aos="fade-right">
             <p class="common-text--highlight">1</p>
             <h3 class="section-common--title">Expert Instructors</h3>
             <p>
@@ -244,7 +252,9 @@
               knowledge and guiding you toward success in your learning journey
             </p>
           </div>
-          <div class="why-choose--div">
+          <div class="why-choose--div" class="why-choose--div"
+            data-aos="fade-right"
+            data-aos-delay="300">
             <p class="common-text--highlight">2</p>
             <h3 class="section-common--title">Interactive Lessons</h3>
             <p>
@@ -253,7 +263,9 @@
               and deeper understanding.
             </p>
           </div>
-          <div class="why-choose--div">
+          <div class="why-choose--div" class="why-choose--div"
+            data-aos="fade-right"
+            data-aos-delay="600">
             <p class="common-text--highlight">3</p>
             <h3 class="section-common--title">Lifelong Learning Support</h3>
             <p>
@@ -264,14 +276,14 @@
           </div>
         </div>
         <!-- center image -->
-        <div class="choose-center--div">
+        <div class="choose-center--div" data-aos="zoom-in">
           <figure>
             <img src="media/phnayout.png" alt="Uday offical website" />
           </figure>
         </div>
         <!-- right cols -->
         <div class="choose-right--div text-align--left">
-          <div class="why-choose--div">
+          <div class="why-choose--div" data-aos="fade-left">
             <p class="common-text--highlight">4</p>
             <h3 class="section-common--title">Results that speak</h3>
             <p>
@@ -279,7 +291,9 @@
               of learners who've turned knowledge into career growth.
             </p>
           </div>
-          <div class="why-choose--div">
+          <div class="why-choose--div"  class="why-choose--div text-align--left"
+             data-aos="fade-left"
+            data-aos-delay="300">
             <p class="common-text--highlight">5</p>
             <h3 class="section-common--title">Future-Ready Learning</h3>
             <p>
@@ -287,7 +301,9 @@
               equips you with tools to adapt, grow, and lead in your field.
             </p>
           </div>
-          <div class="why-choose--div">
+          <div class="why-choose--div"  class="why-choose--div text-align--left"
+             data-aos="fade-left"
+            data-aos-delay="600">
             <p class="common-text--highlight">6</p>
             <h3 class="section-common--title">
               Professional Growth Starts Here

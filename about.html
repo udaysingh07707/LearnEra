@@ -12,8 +12,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!--====== nav section start ======-->
 
     <header class="section-navbar">
@@ -58,7 +63,7 @@
       </div>
 
       <div class="container grid grid-three--cols">
-        <div class="about-div">
+        <div class="about-div" data-aos="fade-up">
           <div class="icon">
             <img src="media/research.png" alt="learnEra research team" />
           </div>
@@ -69,7 +74,7 @@
             learn.
           </p>
         </div>
-        <div class="about-div">
+        <div class="about-div" data-aos="fade-up"  data-aos-delay="300">
           <div class="icon">
             <img src="media/design.png" alt="learnEra design team" />
           </div>
@@ -79,7 +84,7 @@
             We make sure they work for different ways people like to learn.
           </p>
         </div>
-        <div class="about-div">
+        <div class="about-div" data-aos="fade-up"  data-aos-delay="600">
           <div class="icon">
             <img src="media/Coding.png" alt="learnEra coding team" />
           </div>
