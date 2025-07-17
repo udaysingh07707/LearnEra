@@ -1,33 +1,76 @@
-# LearnEra
+# Learnera 🎓
 
-**LearnEra** is an educational website project currently in development, built using **HTML** and **CSS**.  
-It aims to deliver a clean, modern, and responsive user interface for online learning platforms.
-
-## 🚧 Project Status
-
-🛠️ This project is **under active development**.  
-More sections and features will be added soon as I continue learning and building.
-
-## 🌟 Features (Planned)
-
-- Responsive layout for all devices
-- Clean and modern UI
-- Organized code and media structure
-- Basic animations and interactivity
-
-## 📁 Folder Structure
-## 🛠️ Built With
-
-- HTML5
-- CSS3
-
-## 📌 Purpose
-
-This is a **practice project** to improve my frontend skills and learn how to:
-- Build structured HTML/CSS projects
-- Use Git and GitHub for version control
-- Work with organized folders and real-world structure
+**Learnera** is a clean, responsive educational website made using HTML5 and CSS3. It features an elegant layout with sections like About, Services, Contact, and Why Choose Us — perfect for learners or institutions. This was my first project while learning front-end development.
 
 ---
 
-> 📌 I will keep updating this README and project as development progresses.
+## 🌐 Live Demo
+
+🔗 [Visit Learnera](https://udaysingh07707.github.io/LearnEra/)
+
+---
+
+## 📸 Preview
+
+![Learnera Preview](media/preview.png)
+
+
+---
+
+## ✨ Features
+
+- 🎯 Fully responsive design
+- ⚡ Smooth hover animations (scale, rotate)
+- 🎨 Custom favicon included
+- 🧩 Clean code structure using only HTML + CSS
+- 📱 Mobile-friendly layout
+
+---
+
+## 📁 Project Structure
+
+LearnEra/
+├── index.html
+├── about.html
+├── contact.html
+├── services.html
+├── css/
+│ └── style.css
+├── media/
+│ └── (all .png images here)
+
+
+
+---
+
+## 🔧 Built With
+
+- HTML5
+- CSS3
+- GitHub Pages (for hosting)
+
+---
+
+## 🙋‍♂️ About This Project
+
+I made **Learnera** as my very first website project. It helped me learn:
+- Semantic HTML
+- CSS positioning and transitions
+- Responsive layouts
+- Hosting with GitHub Pages
+
+This is the first step in my journey toward becoming a full-stack web developer by 2028.
+
+---
+
+## ✍️ Author
+
+- 👤 Uday Singh
+- 🌐 [LinkedIn](https://www.linkedin.com/in/your-link)
+- 📧 udaysingh8790@gmail.com 
+
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).
