@@ -1,6 +1,6 @@
 # Learnera 🎓
 
-**Learnera** is a clean, responsive educational website made using HTML5 and CSS3. It features an elegant layout with sections like About, Services, Contact, and Why Choose Us — perfect for learners or institutions. This was my first project while learning front-end development.
+**Learnera** is a clean, responsive educational website made using HTML5 and CSS3. It features an elegant layout with sections like About,Blog,contact,services  — perfect for learners or institutions. This was my first project while learning front-end development.
 
 ---
 
